@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WYBMV</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+   
+<body style="background-color:#B6004A">
+
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="from">
+                    <div>from: John Degala</div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="to">
+                    <div>to: Talia Ruscitti</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img1.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Will</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img2.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">You</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img3.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Be</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img4.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">My</div>
+                    </div>
+
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img5.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Valentine</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img6.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">?</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img7.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">BABS</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img8.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">BABS</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img9.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">BABS</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img10.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">I</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img11.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Love</div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img12.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">You</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+
+</body>
+</html>
